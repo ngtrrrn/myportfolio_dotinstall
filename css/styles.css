@@ -1,0 +1,99 @@
+body {
+  color : #333;
+  font-family: Verdana, sans-serif;
+  margin : 0;
+}
+
+header {
+  background-color: #efefef;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+}
+
+.container {
+  /* background-color: pink; */
+  width : 400px;
+  /* 余った領域を左右に均等に割り振るので中央揃えになる */
+  margin-left: auto;
+  margin-right: auto;
+  /* 要素を横並びにしたい場合は親要素で設定 */
+  display : flex;
+  align-items: center;
+}
+
+.icon {
+  /* background-color: skyblue; */
+}
+
+.icon img {
+  /* 領域の形を円形に切り取る。値は角から切り取る長さ */
+  border-radius: 50%;
+  border-width : 4px;
+  border-style : solid;
+  border-color : white;
+}
+
+.info {
+  /* background-color: tomato; */
+  margin-left: 32px;
+}
+
+.info h1{
+  font-weight: normal;
+  font-size: 24px;
+  margin : 0;
+}
+
+.info p{
+  margin : 0;
+  margin-bottom: 16px;
+}
+
+.info ul{
+  margin : 0;
+  padding : 0;
+  /* リストの頭の点をなくす */
+  list-style-type : none;
+  display : flex
+}
+
+.info ul li {
+  margin-right: 8px;
+}
+
+.works {
+  width:400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.works > section {
+  margin-bottom: 60px;
+}
+
+.works > section > h1 {
+  font-weight: normal;
+}
+
+.works p {
+  /* 行の高さを文字の1.8倍に設定（0.8倍分の行間） */
+  line-height: 1.8;
+}
+
+ /* > を足すと直下の階層のみの指定になる */
+.works > h1{
+  font-weight: normal;
+  font-size: 24px;
+  text-align : center;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 60px;
+  color : gray;
+}
+
